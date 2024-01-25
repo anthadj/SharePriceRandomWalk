@@ -30,9 +30,9 @@ In order to execute, the user is advised to create a virtual environment so that
     "conda install -n virtEnv numpy"
     
 6.  You are now ready to run the code. From the code directory run the code using:
-    "python randomWalkInteger.py <S> <N>"
-    "python randomWalkPercent.py <S> <N>"
-    where the values of <S> and <N> must be replaced with integers. <S> is the number of steps of each simulation and <N> is the number of simulations. If this is not correct, the code will not execute.
+    "python randomWalkInteger.py <S> <N>" to run it using the integer change method, or run 
+    "python randomWalkPercent.py <S> <N>" to run it using the percentage change method. 
+    The values of <S> and <N> must be replaced with integers. <S> is the number of steps of each simulation and <N> is the number of simulations. If this is not correct, the code will not execute.
     
 8.  When finished, deactivate the virtual environment using:
     "conda deactivate"
