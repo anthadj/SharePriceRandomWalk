@@ -22,22 +22,22 @@ In order to execute, the user is advised to create a virtual environment so that
     Whenever prompted, write "yes" or "y" and press enter.
     For reference the virutal environment's name is "virtEnv"
     
-4.  Activate the virutal environment using:
+3.  Activate the virutal environment using:
     ```
     conda activate virtEnv
     ```
     
-5.  Install matplotlib in the virtual environment using the command:
+4.  Install matplotlib in the virtual environment using the command:
     ```
     conda install -n virtEnv matplotlib
     ```
     
-6.  Install numpy in the virtual environment using the command:
+5.  Install numpy in the virtual environment using the command:
     ```
     conda install -n virtEnv numpy
     ```
     
-7.  You are now ready to run the code. From the code directory run the code using:
+6.  You are now ready to run the code. From the code directory run the code using:
     ```
     python randomWalkInteger.py <S> <N>
     ```
@@ -48,17 +48,14 @@ In order to execute, the user is advised to create a virtual environment so that
     to run it using the percentage change method. 
     The values of `<S>` and `<N>` must be replaced with integers. `<S>` is the number of steps of each simulation and `<N>` is the number of simulations. If this is not correct, the code will not execute.
     
-8.  When finished, deactivate the virtual environment using:
+7.  When finished, deactivate the virtual environment using:
     ```
     conda deactivate
     ```
-    
-9.  Finally, delete the environemnt using:
+8.  Finally, delete the environemnt using:
     ```
     conda remove --name virtEnv --all
-        ```
-
-
+    ```
 
 # Results and files created
 Once executed, the code will create the following files:
@@ -81,7 +78,7 @@ code, has the probability of the price to be between $1002 and $998.
 # Check the Monte-Carlo simulations works as intended
 To checck the MC simulations converge to the true value for the randomWalkInteger.py code, use the binomial probability mass function to calculate the probability that the price is equal to $1000. Look at the below example.
 
-Upon running the code randomWalkInteger.py many times with the values of S=10 and N=10000, the probability that the share price = $1000 is found to be in the range 24.01% and 25.42%. Of course, it could also be outside of this range since it is a random walk simulation. The inaccuracy will become smaller with a bigger N number, or by taking the average over many repetitions of the code. As the inaccuracy decreases the number should converge to 24.609375% which is the right answer calculated using the binomial probability mass function. This was found using the binomial mass function (see https://en.wikipedia.org/wiki/Binomial_distribution) and using the values of n=10 and k=5, which means that out of the ten randomly generated values, 5 were +1 and 5 were -1, taking us back to the original value of $1000 for the share price. 
+Upon running the code randomWalkInteger.py many times with the values of S=10 and N=10000, the probability that the share price = $1000 is found to be in the range 24.01% and 25.42%. Of course, it could also be outside of this range since it is a random walk simulation. The inaccuracy will become smaller with a bigger N number, or by taking the average over many repetitions of the code. As the inaccuracy decreases the number should converge to 24.609375% which is the right answer calculated using the binomial probability mass function. This was calculated using the binomial mass function (see https://en.wikipedia.org/wiki/Binomial_distribution) and using the values of n=10 and k=5, which means that out of the ten randomly generated values, 5 were +1 and 5 were -1, taking us back to the original value of $1000 for the share price. 
 
 
 
