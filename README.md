@@ -75,7 +75,7 @@ code, has the probability of the price to be between $1002 and $998.
 
 
 
-# Check the Monte-Carlo simulations works as intended
+# Check the Monte-Carlo simulations work as intended
 To checck the MC simulations converge to the true value for the randomWalkInteger.py code, use the binomial probability mass function to calculate the probability that the price is equal to $1000. Look at the below example.
 
 Upon running the code randomWalkInteger.py many times with the values of S=10 and N=10000, the probability that the share price = $1000 is found to be in the range 24.01% and 25.42%. Of course, it could also be outside of this range since it is a random walk simulation. The inaccuracy will become smaller with a bigger N number, or by taking the average over many repetitions of the code. As the inaccuracy decreases the number should converge to 24.609375% which is the right answer calculated using the binomial probability mass function. This was calculated using the binomial mass function (see https://en.wikipedia.org/wiki/Binomial_distribution) and using the values of n=10 and k=5, which means that out of the ten randomly generated values, 5 were +1 and 5 were -1, taking us back to the original value of $1000 for the share price. 
