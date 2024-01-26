@@ -37,7 +37,7 @@ In order to execute, the user is advised to create a virtual environment so that
     conda install -n virtEnv numpy
     ```
     
-6.  You are now ready to run the code. From the code directory run the code using:
+6.  You are now ready to run the code. From the `src` directory run the code using:
     ```
     python randomWalkInteger.py <S> <N>
     ```
@@ -58,7 +58,7 @@ In order to execute, the user is advised to create a virtual environment so that
     ```
 
 # Results and files created
-Once executed, the code will create the following files:
+Once executed, the code will create the following files. The files will be saved in the `../outputs/` directory:
 
 1. "ProbDistInt_S=`<numberS>`_N=`<numberN>`.png" produced by `randomWalkInteger.py` <br />
    "ProbDistPer_S=`<numberS>`_N=`<numberN>`.png" produced by `randomWalkPercent.py` <br />
